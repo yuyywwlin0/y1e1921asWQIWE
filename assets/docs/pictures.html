@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>番剧列表</title>
+	<link rel="stylesheet" href="../css/header.css">
+    <style type="text/css">
+	     /* 添加侧面导航栏样式 */
+       #sidebar {
+		position: fixed;
+		left: 10px;
+		top: 100px;
+		width: 100px;
+		background-color: #f2f2f2;
+		border: 1px solid #ccc;
+		padding: 10px;
+		border-radius: 10px; /* 添加这一行以设置圆角 */
+		}
+        
+        #sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        #sidebar li {
+            margin-bottom: 10px;
+        }
+        
+        #sidebar a {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        #sidebar a:hover {
+            color: #ff8200;
+        }
+        #picturelist {
+            width: 100%;
+            max-width: 1400px; /* 最大宽度 */
+            margin: 30px auto;
+            background-color: #fff;
+            border-radius: 20px;
+            display: flex;
+            flex-wrap: wrap; /* 允许换行 */
+            justify-content: space-around; /* 图片之间的间距 */
+        }
+
+        .image-container {
+            width: calc(25% - 40px); /* 图片容器的宽度，减去边距 */
+            margin: 20px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        .text-under-image {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* 黑色透明背景 */
+            color: white;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 5px 0;
+            font-size: 16px; /* 可根据需要调整字体大小 */
+            line-height: 1.6; /* 可根据需要调整行高 */
+            word-wrap: break-word; /* 防止文本溢出 */
+        }
+		a {
+		  text-decoration: none;
+		}
+    </style>
+</head>
+
+<body>
+	<div id="mainheader">
+		<div id="mainlist">
+			<font  id="home">首页</font>
+			<font  id="pictures">番剧列表</font>
+			<a href="home.html"><font id="illustrator">动画首页</font><a>
+			
+		</div>
+	</div>
+	<!-- 添加侧面导航栏 -->
+    <div id="sidebar">
+        <ul>
+		 	<li><a href="#january-animes">1月新番</a></li>
+            <li><a href="#april-animes">4月新番</a></li>
+            <li><a href="#july-animes">7月新番</a></li>
+            <li><a href="#october-animes">10月新番</a></li>         
+        </ul>
+    </div>	
+	<div id="picturelist">
+		<div class="image-container" id = "january-animes">
+            <img src="../imgs/1month/1.jpg" alt="图片1">
+            <div class="text-under-image">METALLIC ROUGE</div>
+        </div>
+		<div class="image-container">
+           <img src="../imgs/1month/2.jpg" alt="图片2">
+            <div class="text-under-image">月刊妄想科U</div>
+        </div>
+		<div class="image-container">
+           <img src="../imgs/1month/3.jpg" alt="图片3">
+            <div class="text-under-image">勇气爆发BangBravern</div>
+        </div>	
+		<div class="image-container">
+           <img src="../imgs/1month/4.jpg" alt="图片4">
+            <div class="text-under-image">BUCCHIGIRI</div>
+        </div>	
+		<div class="image-container">
+             <img src="../imgs/1month/5.jpg" alt="图片5">
+            <div class="text-under-image">明治击剑1874</div>
+        </div>
+		<div class="image-container">
+             <img src="../imgs/1month/6.jpg" alt="图片6">
+            <div class="text-under-image">碰之道</div>
+        </div>
+		<div class="image-container">
+             <img src="../imgs/1month/7.jpg" alt="图片7">
+            <div class="text-under-image">Wonderful光之美少女</div>
+        </div>	
+		<div class="image-container">
+          <img src="../imgs/1month/8.jpg" alt="图片8">
+            <div class="text-under-image">大欺诈师 第2期</div>
+        </div>		
+		<div class="image-container" id = "april-animes">
+            <img src="../imgs/4month/1.jpg" alt="图片1">
+            <div class="text-under-image">异世界自杀小队</div>
+        </div>
+		<div class="image-container">
+           <img src="../imgs/4month/2.jpg" alt="图片2">
+            <div class="text-under-image">古连泰沙U</div>
+        </div>
+		<div class="image-container">
+           <img src="../imgs/4month/3.jpg" alt="图片3">
+            <div class="text-under-image">现代误译</div>
+        </div>	
+		<div class="image-container">
+           <img src="../imgs/4month/4.jpg" alt="图片4">
+            <div class="text-under-image">少女如草花绽放</div>
+        </div>	
+		<div class="image-container">
+             <img src="../imgs/4month/5.jpg" alt="图片5">
+            <div class="text-under-image">深夜冲击</div>
+        </div>
+		<div class="image-container">
+             <img src="../imgs/4month/6.jpg" alt="图片6">
+            <div class="text-under-image">德里科的托儿所</div>
+        </div>
+		<div class="image-container">
+             <img src="../imgs/4month/7.jpg" alt="图片7">
+            <div class="text-under-image">贴满！小狗 第2期</div>
+        </div>	
+		<div class="image-container">
+          <img src="../imgs/4month/8.jpg" alt="图片8">
+            <div class="text-under-image">小猫小起的碰碰暑假</div>
+        </div>		
+			<div class="image-container"id = "july-animes">
+             <img src="../imgs/7month/5.jpg" alt="图片5">
+            <div class="text-under-image" >深夜冲击</div>
+        </div>
+		<div class="image-container">
+             <img src="../imgs/7month/6.jpg" alt="图片6">
+            <div class="text-under-image">德里科的托儿所</div>
+        </div>
+		<div class="image-container">
+             <img src="../imgs/7month/7.jpg" alt="图片7">
+            <div class="text-under-image">贴满！小狗 第2期</div>
+        </div>	
+		<div class="image-container">
+          <img src="../imgs/7month/8.jpg" alt="图片8">
+            <div class="text-under-image">小猫小起的碰碰暑假</div>
+        </div>	
+		<div class="image-container">
+            <img src="../imgs/7month/1.jpg" alt="图片1">
+            <div class="text-under-image">异世界自杀小队</div>
+        </div>
+		<div class="image-container">
+          <img src="../imgs/7month/2.jpg" alt="图片2">
+            <div class="text-under-image">古连泰沙U</div>
+        </div>
+		<div class="image-container">
+           <img src="../imgs/7month/3.jpg" alt="图片3">
+            <div class="text-under-image">现代误译</div>
+        </div>	
+		<div class="image-container">
+           <img src="../imgs/7month/4.jpg" alt="图片4">
+            <div class="text-under-image">少女如草花绽放</div>
+        </div>	
+		<div class="image-container"id = "october-animes">
+            <img src="../imgs/10	month/1.jpg" alt="图片1">
+            <div class="text-under-image">凹凸魔女的母女故事</div>
+        </div>
+		<div class="image-container">
+           <img src="../imgs/10month/2.jpg" alt="图片2">
+            <div class="text-under-image">GOD.app 神明选拔</div>
+        </div>
+		<div class="image-container">
+           <img src="../imgs/10month/3.jpg" alt="图片3">
+            <div class="text-under-image">绊之Allele 第2期</div>
+        </div>	
+		<div class="image-container">
+           <img src="../imgs/10month/4.jpg" alt="图片4">
+            <div class="text-under-image">高达创战元宇宙</div>
+        </div>	
+				<div class="image-container">
+            <img src="../imgs/10month/5.jpg" alt="图片1">
+            <div class="text-under-image">我们的雨色协议</div>
+        </div>
+		<div class="image-container">
+           <img src="../imgs/10month/6.jpg" alt="图片2">
+            <div class="text-under-image">希望的力量 成年光之美少女'23</div>
+        </div>
+		<div class="image-container">
+           <img src="../imgs/10month/7.jpg" alt="图片3">
+            <div class="text-under-image">川越男子合唱团</div>
+        </div>	
+		<div class="image-container">
+           <img src="../imgs/10month/8.jpg" alt="图片4">
+            <div class="text-under-image">新足球小将 第2期 世少篇放</div>
+        </div>
+
+	</div>
+</body>
+
+<script>
+	// header的各个导航按钮跳转页面
+	document.getElementById('home').addEventListener('click', function () {
+		window.location.href = "../../index.html";
+	})
+	document.getElementById('pictures').addEventListener('click', function () {
+		window.location.href = "pictures.html";
+	})
+</script>
+
+
+<script src="../js/route.js"></script>
+
+</html>
